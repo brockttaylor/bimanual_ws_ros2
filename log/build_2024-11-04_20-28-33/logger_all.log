@@ -1,0 +1,316 @@
+[0.223s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.223s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7849db12e7a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7849db20ee30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7849db20ee30>>, mixin_verb=('build',))
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.700s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/bimanual_ws_ros2'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extension 'ignore'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extension 'ignore_ament_install'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extensions ['colcon_pkg']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extension 'colcon_pkg'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extensions ['colcon_meta']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extension 'colcon_meta'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extensions ['ros']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibe) by extension 'ros'
+[0.717s] DEBUG:colcon.colcon_core.package_identification:Package 'src/minibe' with type 'ros.ament_python' and name 'minibe'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ignore'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ignore_ament_install'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['colcon_pkg']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'colcon_pkg'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['colcon_meta']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ros'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['cmake', 'python']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'cmake'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'python'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['python_setup_py']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'python_setup_py'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extension 'ignore_ament_install'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extensions ['colcon_pkg']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extension 'colcon_pkg'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extensions ['colcon_meta']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_description) by extension 'ros'
+[0.719s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/minibe_description' with type 'ros.ament_python' and name 'minibe_description'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extension 'ignore'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extension 'ignore_ament_install'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extensions ['colcon_pkg']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extension 'colcon_pkg'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extensions ['colcon_meta']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extension 'colcon_meta'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extensions ['ros']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/minibe_moveit_config) by extension 'ros'
+[0.720s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/minibe_moveit_config' with type 'ros.ament_cmake' and name 'minibe_moveit_config'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extensions ['ignore', 'ignore_ament_install']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extension 'ignore'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extension 'ignore_ament_install'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extensions ['colcon_pkg']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extension 'colcon_pkg'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extensions ['colcon_meta']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extension 'colcon_meta'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extensions ['ros']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_parser_py) by extension 'ros'
+[0.721s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_parser_py' with type 'ros.ament_python' and name 'urdfdom_py'
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.790s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 56 installed packages in /home/ubuntu/ws_moveit2/install
+[0.792s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/humble
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.889s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'urdfdom_py' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding urdfdom_py
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_target' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_clean_cache' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_clean_first' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'cmake_force_configure' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'ament_cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'catkin_cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'minibe' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'minibe' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/bimanual_ws_ros2/build/minibe', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/bimanual_ws_ros2/install/minibe', 'merge_install': False, 'path': '/home/ubuntu/bimanual_ws_ros2/src/minibe', 'symlink_install': False, 'test_result_base': None}
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_target' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'minibe_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/bimanual_ws_ros2/build/minibe_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/bimanual_ws_ros2/install/minibe_description', 'merge_install': False, 'path': '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description', 'symlink_install': False, 'test_result_base': None}
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_target' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'urdfdom_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'urdfdom_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/bimanual_ws_ros2/build/urdfdom_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py', 'merge_install': False, 'path': '/home/ubuntu/bimanual_ws_ros2/src/urdf_parser_py', 'symlink_install': False, 'test_result_base': None}
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'minibe_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.892s] DEBUG:colcon.colcon_core.verb:Building package 'minibe_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config', 'merge_install': False, 'path': '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.892s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.892s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.893s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description' with build type 'ament_python'
+[0.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe_description', 'ament_prefix_path')
+[0.900s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/ament_prefix_path.ps1'
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/ament_prefix_path.dsv'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/ament_prefix_path.sh'
+[0.905s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.905s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.910s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/bimanual_ws_ros2/src/minibe' with build type 'ament_python'
+[0.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe', 'ament_prefix_path')
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/ament_prefix_path.ps1'
+[0.912s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/ament_prefix_path.dsv'
+[0.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/ament_prefix_path.sh'
+[0.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.913s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.918s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/bimanual_ws_ros2/src/urdf_parser_py' with build type 'ament_python'
+[0.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdfdom_py', 'ament_prefix_path')
+[0.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/ament_prefix_path.ps1'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/ament_prefix_path.dsv'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/ament_prefix_path.sh'
+[0.920s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.920s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.118s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description'
+[1.118s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.311s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/bimanual_ws_ros2/src/minibe'
+[1.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.312s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.499s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/bimanual_ws_ros2/src/urdf_parser_py'
+[1.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/minibe': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/minibe build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe/install.log --single-version-externally-managed install_data
+[2.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/urdf_parser_py': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/urdfdom_py build --build-base /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build install --record /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/install.log --single-version-externally-managed install_data
+[2.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/minibe_description build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe_description/install.log --single-version-externally-managed install_data
+[2.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/minibe' returned '0': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/minibe build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe/install.log --single-version-externally-managed install_data
+[2.219s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe' for CMake module files
+[2.219s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe' for CMake config files
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe/lib'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe/bin'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/pkgconfig/minibe.pc'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages'
+[2.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe', 'pythonpath')
+[2.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/pythonpath.ps1'
+[2.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/pythonpath.dsv'
+[2.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/hook/pythonpath.sh'
+[2.223s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe/bin'
+[2.223s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibe)
+[2.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.ps1'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.dsv'
+[2.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.sh'
+[2.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.bash'
+[2.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.zsh'
+[2.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/bimanual_ws_ros2/install/minibe/share/colcon-core/packages/minibe)
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description' for CMake module files
+[2.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description' returned '0': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/minibe_description build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe_description/install.log --single-version-externally-managed install_data
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description' for CMake config files
+[2.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe_description', 'cmake_prefix_path')
+[2.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/cmake_prefix_path.ps1'
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/cmake_prefix_path.dsv'
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/cmake_prefix_path.sh'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/bin'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/pkgconfig/minibe_description.pc'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages'
+[2.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe_description', 'pythonpath')
+[2.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/pythonpath.ps1'
+[2.366s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/pythonpath.dsv'
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/hook/pythonpath.sh'
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/bin'
+[2.367s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibe_description)
+[2.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/package.ps1'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/package.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/package.sh'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/package.bash'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description/package.zsh'
+[2.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/colcon-core/packages/minibe_description)
+[2.369s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_moveit_config' with build type 'ament_cmake'
+[2.370s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_moveit_config'
+[2.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py' for CMake module files
+[2.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/urdf_parser_py' returned '0': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/urdfdom_py build --build-base /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build install --record /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/install.log --single-version-externally-managed install_data
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py' for CMake config files
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib'
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/bin'
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/pkgconfig/urdfdom_py.pc'
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages'
+[2.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdfdom_py', 'pythonpath')
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/pythonpath.ps1'
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/pythonpath.dsv'
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/hook/pythonpath.sh'
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/bin'
+[2.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdfdom_py)
+[2.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/package.ps1'
+[2.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/package.dsv'
+[2.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/package.sh'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/package.bash'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py/package.zsh'
+[2.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/colcon-core/packages/urdfdom_py)
+[2.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/ubuntu/ws_moveit2/install/moveit_runtime:/home/ubuntu/ws_moveit2/install/moveit_config:/home/ubuntu/ws_moveit2/install/moveit2_tutorials:/home/ubuntu/ws_moveit2/install/moveit:/home/ubuntu/ws_moveit2/install/moveit_planners:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_visual_tools:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_visualization:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_demo:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_capabilities:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_core:/home/ubuntu/ws_moveit2/install/moveit_ros_control_interface:/home/ubuntu/ws_moveit2/install/moveit_plugins:/home/ubuntu/ws_moveit2/install/moveit_simple_controller_manager:/home/ubuntu/ws_moveit2/install/moveit_setup_assistant:/home/ubuntu/ws_moveit2/install/moveit_setup_srdf_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_core_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_controllers:/home/ubuntu/ws_moveit2/install/moveit_setup_app_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_framework:/home/ubuntu/ws_moveit2/install/moveit_servo:/home/ubuntu/ws_moveit2/install/moveit_ros:/home/ubuntu/ws_moveit2/install/moveit_ros_visualization:/home/ubuntu/ws_moveit2/install/moveit_hybrid_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_planning_interface:/home/ubuntu/ws_moveit2/install/moveit_ros_benchmarks:/home/ubuntu/ws_moveit2/install/moveit_ros_warehouse:/home/ubuntu/ws_moveit2/install/moveit_ros_robot_interaction:/home/ubuntu/ws_moveit2/install/moveit_ros_perception:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_ros_move_group:/home/ubuntu/ws_moveit2/install/moveit_planners_ompl:/home/ubuntu/ws_moveit2/install/moveit_ros_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/ubuntu/ws_moveit2/install/moveit_planners_chomp:/home/ubuntu/ws_moveit2/install/moveit_kinematics:/home/ubuntu/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/ubuntu/ws_moveit2/install/chomp_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_core:/home/ubuntu/ws_moveit2/install/srdfdom:/home/ubuntu/ws_moveit2/install/rviz_marker_tools:/home/ubuntu/ws_moveit2/install/rosparam_shortcuts:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_msgs:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_support:/home/ubuntu/ws_moveit2/install/moveit_resources:/home/ubuntu/ws_moveit2/install/moveit_resources_pr2_description:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_description:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_description:/home/ubuntu/ws_moveit2/install/moveit_common:/home/ubuntu/ws_moveit2/install/moveit_configs_utils:/home/ubuntu/ws_moveit2/install/launch_param_builder:/opt/ros/humble PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config -- -j4 -l4
+[2.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/ubuntu/ws_moveit2/install/moveit_runtime:/home/ubuntu/ws_moveit2/install/moveit_config:/home/ubuntu/ws_moveit2/install/moveit2_tutorials:/home/ubuntu/ws_moveit2/install/moveit:/home/ubuntu/ws_moveit2/install/moveit_planners:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_visual_tools:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_visualization:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_demo:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_capabilities:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_core:/home/ubuntu/ws_moveit2/install/moveit_ros_control_interface:/home/ubuntu/ws_moveit2/install/moveit_plugins:/home/ubuntu/ws_moveit2/install/moveit_simple_controller_manager:/home/ubuntu/ws_moveit2/install/moveit_setup_assistant:/home/ubuntu/ws_moveit2/install/moveit_setup_srdf_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_core_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_controllers:/home/ubuntu/ws_moveit2/install/moveit_setup_app_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_framework:/home/ubuntu/ws_moveit2/install/moveit_servo:/home/ubuntu/ws_moveit2/install/moveit_ros:/home/ubuntu/ws_moveit2/install/moveit_ros_visualization:/home/ubuntu/ws_moveit2/install/moveit_hybrid_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_planning_interface:/home/ubuntu/ws_moveit2/install/moveit_ros_benchmarks:/home/ubuntu/ws_moveit2/install/moveit_ros_warehouse:/home/ubuntu/ws_moveit2/install/moveit_ros_robot_interaction:/home/ubuntu/ws_moveit2/install/moveit_ros_perception:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_ros_move_group:/home/ubuntu/ws_moveit2/install/moveit_planners_ompl:/home/ubuntu/ws_moveit2/install/moveit_ros_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/ubuntu/ws_moveit2/install/moveit_planners_chomp:/home/ubuntu/ws_moveit2/install/moveit_kinematics:/home/ubuntu/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/ubuntu/ws_moveit2/install/chomp_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_core:/home/ubuntu/ws_moveit2/install/srdfdom:/home/ubuntu/ws_moveit2/install/rviz_marker_tools:/home/ubuntu/ws_moveit2/install/rosparam_shortcuts:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_msgs:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_support:/home/ubuntu/ws_moveit2/install/moveit_resources:/home/ubuntu/ws_moveit2/install/moveit_resources_pr2_description:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_description:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_description:/home/ubuntu/ws_moveit2/install/moveit_common:/home/ubuntu/ws_moveit2/install/moveit_configs_utils:/home/ubuntu/ws_moveit2/install/launch_param_builder:/opt/ros/humble PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config -- -j4 -l4
+[2.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/ubuntu/ws_moveit2/install/moveit_runtime:/home/ubuntu/ws_moveit2/install/moveit_config:/home/ubuntu/ws_moveit2/install/moveit2_tutorials:/home/ubuntu/ws_moveit2/install/moveit:/home/ubuntu/ws_moveit2/install/moveit_planners:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_visual_tools:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_visualization:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_demo:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_capabilities:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_core:/home/ubuntu/ws_moveit2/install/moveit_ros_control_interface:/home/ubuntu/ws_moveit2/install/moveit_plugins:/home/ubuntu/ws_moveit2/install/moveit_simple_controller_manager:/home/ubuntu/ws_moveit2/install/moveit_setup_assistant:/home/ubuntu/ws_moveit2/install/moveit_setup_srdf_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_core_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_controllers:/home/ubuntu/ws_moveit2/install/moveit_setup_app_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_framework:/home/ubuntu/ws_moveit2/install/moveit_servo:/home/ubuntu/ws_moveit2/install/moveit_ros:/home/ubuntu/ws_moveit2/install/moveit_ros_visualization:/home/ubuntu/ws_moveit2/install/moveit_hybrid_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_planning_interface:/home/ubuntu/ws_moveit2/install/moveit_ros_benchmarks:/home/ubuntu/ws_moveit2/install/moveit_ros_warehouse:/home/ubuntu/ws_moveit2/install/moveit_ros_robot_interaction:/home/ubuntu/ws_moveit2/install/moveit_ros_perception:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_ros_move_group:/home/ubuntu/ws_moveit2/install/moveit_planners_ompl:/home/ubuntu/ws_moveit2/install/moveit_ros_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/ubuntu/ws_moveit2/install/moveit_planners_chomp:/home/ubuntu/ws_moveit2/install/moveit_kinematics:/home/ubuntu/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/ubuntu/ws_moveit2/install/chomp_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_core:/home/ubuntu/ws_moveit2/install/srdfdom:/home/ubuntu/ws_moveit2/install/rviz_marker_tools:/home/ubuntu/ws_moveit2/install/rosparam_shortcuts:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_msgs:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_support:/home/ubuntu/ws_moveit2/install/moveit_resources:/home/ubuntu/ws_moveit2/install/moveit_resources_pr2_description:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_description:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_description:/home/ubuntu/ws_moveit2/install/moveit_common:/home/ubuntu/ws_moveit2/install/moveit_configs_utils:/home/ubuntu/ws_moveit2/install/launch_param_builder:/opt/ros/humble PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config
+[2.641s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibe_moveit_config)
+[2.641s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config' for CMake module files
+[2.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/ubuntu/ws_moveit2/install/moveit_runtime:/home/ubuntu/ws_moveit2/install/moveit_config:/home/ubuntu/ws_moveit2/install/moveit2_tutorials:/home/ubuntu/ws_moveit2/install/moveit:/home/ubuntu/ws_moveit2/install/moveit_planners:/home/ubuntu/ws_moveit2/install/pilz_industrial_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_visual_tools:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_visualization:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_demo:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_capabilities:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_core:/home/ubuntu/ws_moveit2/install/moveit_ros_control_interface:/home/ubuntu/ws_moveit2/install/moveit_plugins:/home/ubuntu/ws_moveit2/install/moveit_simple_controller_manager:/home/ubuntu/ws_moveit2/install/moveit_setup_assistant:/home/ubuntu/ws_moveit2/install/moveit_setup_srdf_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_core_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_controllers:/home/ubuntu/ws_moveit2/install/moveit_setup_app_plugins:/home/ubuntu/ws_moveit2/install/moveit_setup_framework:/home/ubuntu/ws_moveit2/install/moveit_servo:/home/ubuntu/ws_moveit2/install/moveit_ros:/home/ubuntu/ws_moveit2/install/moveit_ros_visualization:/home/ubuntu/ws_moveit2/install/moveit_hybrid_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_planning_interface:/home/ubuntu/ws_moveit2/install/moveit_ros_benchmarks:/home/ubuntu/ws_moveit2/install/moveit_ros_warehouse:/home/ubuntu/ws_moveit2/install/moveit_ros_robot_interaction:/home/ubuntu/ws_moveit2/install/moveit_ros_perception:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_ros_move_group:/home/ubuntu/ws_moveit2/install/moveit_planners_ompl:/home/ubuntu/ws_moveit2/install/moveit_ros_planning:/home/ubuntu/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/ubuntu/ws_moveit2/install/moveit_planners_chomp:/home/ubuntu/ws_moveit2/install/moveit_kinematics:/home/ubuntu/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/ubuntu/ws_moveit2/install/chomp_motion_planner:/home/ubuntu/ws_moveit2/install/moveit_core:/home/ubuntu/ws_moveit2/install/srdfdom:/home/ubuntu/ws_moveit2/install/rviz_marker_tools:/home/ubuntu/ws_moveit2/install/rosparam_shortcuts:/home/ubuntu/ws_moveit2/install/moveit_task_constructor_msgs:/home/ubuntu/ws_moveit2/install/moveit_resources_prbt_support:/home/ubuntu/ws_moveit2/install/moveit_resources:/home/ubuntu/ws_moveit2/install/moveit_resources_pr2_description:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_panda_description:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/ubuntu/ws_moveit2/install/moveit_resources_fanuc_description:/home/ubuntu/ws_moveit2/install/moveit_common:/home/ubuntu/ws_moveit2/install/moveit_configs_utils:/home/ubuntu/ws_moveit2/install/launch_param_builder:/opt/ros/humble PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config
+[2.642s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config' for CMake config files
+[2.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe_moveit_config', 'cmake_prefix_path')
+[2.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.ps1'
+[2.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.dsv'
+[2.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.sh'
+[2.643s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/bin'
+[2.643s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/lib/pkgconfig/minibe_moveit_config.pc'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/lib/python3.10/site-packages'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/bin'
+[2.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.ps1'
+[2.644s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.dsv'
+[2.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.sh'
+[2.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.bash'
+[2.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.zsh'
+[2.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/colcon-core/packages/minibe_moveit_config)
+[2.678s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibe_moveit_config)
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config' for CMake module files
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config' for CMake config files
+[2.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibe_moveit_config', 'cmake_prefix_path')
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.ps1'
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.dsv'
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/hook/cmake_prefix_path.sh'
+[2.679s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/bin'
+[2.679s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/lib/pkgconfig/minibe_moveit_config.pc'
+[2.680s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/lib/python3.10/site-packages'
+[2.680s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/bin'
+[2.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.ps1'
+[2.680s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.dsv'
+[2.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.sh'
+[2.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.bash'
+[2.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.zsh'
+[2.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/colcon-core/packages/minibe_moveit_config)
+[2.682s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.682s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.682s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.682s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.693s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.693s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.693s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.704s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.705s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/bimanual_ws_ros2/install/local_setup.ps1'
+[2.706s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/bimanual_ws_ros2/install/_local_setup_util_ps1.py'
+[2.709s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/bimanual_ws_ros2/install/setup.ps1'
+[2.712s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/bimanual_ws_ros2/install/local_setup.sh'
+[2.713s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/bimanual_ws_ros2/install/_local_setup_util_sh.py'
+[2.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/bimanual_ws_ros2/install/setup.sh'
+[2.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/bimanual_ws_ros2/install/local_setup.bash'
+[2.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/bimanual_ws_ros2/install/setup.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/bimanual_ws_ros2/install/local_setup.zsh'
+[2.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/bimanual_ws_ros2/install/setup.zsh'

@@ -1,0 +1,22 @@
+[0.187s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/minibe': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ubuntu/bimanual_ws_ros2/build/minibe/pytest.xml --junit-prefix=minibe -o cache_dir=/home/ubuntu/bimanual_ws_ros2/build/minibe/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.491s] [1m============================= test session starts ==============================[0m
+[0.491s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.495s] cachedir: /home/ubuntu/bimanual_ws_ros2/build/minibe/.pytest_cache
+[0.495s] rootdir: /home/ubuntu/bimanual_ws_ros2/src/minibe
+[0.495s] plugins: launch-testing-ros-0.19.7, ament-pep257-0.12.11, ament-flake8-0.12.11, ament-copyright-0.12.11, launch-testing-1.0.6, ament-lint-0.12.11, ament-xmllint-0.12.11, cov-3.0.0, colcon-core-0.18.1
+[0.643s] [1mcollecting ... [0m[1m
+[0.643s] collected 3 items                                                              [0m
+[0.643s] 
+[0.648s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.723s] test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+[0.736s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[0.736s] 
+[0.736s] [33m=============================== warnings summary ===============================[0m
+[0.736s] test/test_flake8.py::test_flake8
+[0.736s] test/test_flake8.py::test_flake8
+[0.736s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[0.736s] 
+[0.736s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[0.736s] -- generated xml file: /home/ubuntu/bimanual_ws_ros2/build/minibe/pytest.xml ---
+[0.736s] [33m=================== [32m2 passed[0m, [33m[1m1 skipped[0m, [33m[1m2 warnings[0m[33m in 0.24s[0m[33m ===================[0m
+[0.810s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/minibe' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ubuntu/bimanual_ws_ros2/build/minibe/pytest.xml --junit-prefix=minibe -o cache_dir=/home/ubuntu/bimanual_ws_ros2/build/minibe/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

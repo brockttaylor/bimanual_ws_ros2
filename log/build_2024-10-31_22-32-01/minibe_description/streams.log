@@ -1,0 +1,31 @@
+[0.740s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/minibe_description build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe_description/install.log --single-version-externally-managed install_data
+[0.909s] running egg_info
+[0.910s] creating ../../../build/minibe_description/minibe_description.egg-info
+[0.910s] writing ../../../build/minibe_description/minibe_description.egg-info/PKG-INFO
+[0.910s] writing dependency_links to ../../../build/minibe_description/minibe_description.egg-info/dependency_links.txt
+[0.910s] writing entry points to ../../../build/minibe_description/minibe_description.egg-info/entry_points.txt
+[0.911s] writing requirements to ../../../build/minibe_description/minibe_description.egg-info/requires.txt
+[0.911s] writing top-level names to ../../../build/minibe_description/minibe_description.egg-info/top_level.txt
+[0.911s] writing manifest file '../../../build/minibe_description/minibe_description.egg-info/SOURCES.txt'
+[0.912s] reading manifest file '../../../build/minibe_description/minibe_description.egg-info/SOURCES.txt'
+[0.913s] writing manifest file '../../../build/minibe_description/minibe_description.egg-info/SOURCES.txt'
+[0.913s] running build
+[0.913s] running build_py
+[0.913s] creating /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build
+[0.913s] creating /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build/lib
+[0.913s] creating /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build/lib/minibe_description
+[0.913s] copying minibe_description/__init__.py -> /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build/lib/minibe_description
+[0.913s] running install
+[0.913s] running install_lib
+[0.914s] creating /home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages/minibe_description
+[0.914s] copying /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build/lib/minibe_description/__init__.py -> /home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages/minibe_description
+[0.914s] byte-compiling /home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages/minibe_description/__init__.py to __init__.cpython-310.pyc
+[0.914s] running install_data
+[0.914s] copying resource/minibe_description -> /home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/ament_index/resource_index/packages
+[0.915s] copying package.xml -> /home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description
+[0.915s] copying urdf/gripper_v2.xacro -> /home/ubuntu/bimanual_ws_ros2/install/minibe_description/share/minibe_description
+[0.915s] running install_egg_info
+[0.916s] Copying ../../../build/minibe_description/minibe_description.egg-info to /home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages/minibe_description-0.0.0-py3.10.egg-info
+[0.917s] running install_scripts
+[0.933s] writing list of installed files to '/home/ubuntu/bimanual_ws_ros2/build/minibe_description/install.log'
+[0.967s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_description' returned '0': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/minibe_description build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe_description/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe_description/install.log --single-version-externally-managed install_data

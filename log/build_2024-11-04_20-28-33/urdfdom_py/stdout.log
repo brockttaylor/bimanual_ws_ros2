@@ -1,0 +1,53 @@
+running egg_info
+creating ../../build/urdfdom_py/urdfdom_py.egg-info
+writing ../../build/urdfdom_py/urdfdom_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/urdfdom_py/urdfdom_py.egg-info/dependency_links.txt
+writing entry points to ../../build/urdfdom_py/urdfdom_py.egg-info/entry_points.txt
+writing requirements to ../../build/urdfdom_py/urdfdom_py.egg-info/requires.txt
+writing top-level names to ../../build/urdfdom_py/urdfdom_py.egg-info/top_level.txt
+writing manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build
+creating /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib
+creating /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/display_urdf.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/urdf.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/__init__.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/sdf.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py
+creating /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+copying src/urdf_parser_py/xml_reflection/core.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+copying src/urdf_parser_py/xml_reflection/basics.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+copying src/urdf_parser_py/xml_reflection/__init__.py -> /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+running install
+running install_lib
+creating /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py
+creating /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection/core.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection/basics.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection/__init__.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/display_urdf.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/urdf.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/__init__.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py
+copying /home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/build/lib/urdf_parser_py/sdf.py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection/core.py to core.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection/basics.py to basics.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/xml_reflection/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/display_urdf.py to display_urdf.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/urdf.py to urdf.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdf_parser_py/sdf.py to sdf.cpython-310.pyc
+running install_data
+creating /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/ament_index
+creating /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/ament_index/resource_index
+creating /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/ament_index/resource_index/packages
+copying resource/urdfdom_py -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/share/urdfdom_py
+running install_egg_info
+Copying ../../build/urdfdom_py/urdfdom_py.egg-info to /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/python3.10/site-packages/urdfdom_py-1.2.1-py3.10.egg-info
+running install_scripts
+Installing display_urdf script to /home/ubuntu/bimanual_ws_ros2/install/urdfdom_py/lib/urdfdom_py
+writing list of installed files to '/home/ubuntu/bimanual_ws_ros2/build/urdfdom_py/install.log'

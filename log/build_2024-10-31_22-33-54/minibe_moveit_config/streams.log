@@ -1,0 +1,47 @@
+[0.008s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake /home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_moveit_config -DCMAKE_INSTALL_PREFIX=/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config
+[0.022s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.211s] -- Configuring done
+[0.213s] -- Generating done
+[0.213s] -- Build files have been written to: /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config
+[0.215s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake /home/ubuntu/bimanual_ws_ros2/src/moveit_resources/minibe_moveit_config -DCMAKE_INSTALL_PREFIX=/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config
+[0.216s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config -- -j4 -l4
+[0.241s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config -- -j4 -l4
+[0.261s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config
+[0.266s] -- Install configuration: "Release"
+[0.266s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/ament_index/resource_index/package_run_dependencies/minibe_moveit_config
+[0.266s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/ament_index/resource_index/parent_prefix_path/minibe_moveit_config
+[0.266s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/environment/ament_prefix_path.sh
+[0.266s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/environment/ament_prefix_path.dsv
+[0.266s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/environment/path.sh
+[0.266s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/environment/path.dsv
+[0.266s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/local_setup.bash
+[0.266s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/local_setup.sh
+[0.267s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/local_setup.zsh
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/local_setup.dsv
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.dsv
+[0.267s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/ament_index/resource_index/packages/minibe_moveit_config
+[0.267s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/cmake/minibe_moveit_configConfig.cmake
+[0.267s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/cmake/minibe_moveit_configConfig-version.cmake
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/package.xml
+[0.267s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/moveit_rviz.launch.py
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/rsp.launch.py
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/spawn_controllers.launch.py
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/setup_assistant.launch.py
+[0.267s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/demo.launch.py
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/warehouse_db.launch.py
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/launch/move_group.launch.py
+[0.268s] -- Up-to-date: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/initial_positions.yaml
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/ros2_controllers.yaml
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/minibe.srdf
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/kinematics.yaml
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/moveit.rviz
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/joint_limits.yaml
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/moveit_controllers.yaml
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/minibe.ros2_control.xacro
+[0.268s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/minibe.urdf.xacro
+[0.269s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/config/pilz_cartesian_limits.yaml
+[0.269s] -- Installing: /home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config/share/minibe_moveit_config/.setup_assistant
+[0.270s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ubuntu/bimanual_ws_ros2/install/minibe_description:/home/ubuntu/bimanual_ws_ros2/install/minibe_moveit_config:/home/ubuntu/bimanual_ws_ros2/install/minibe:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/bimanual_ws_ros2/build/minibe_moveit_config
