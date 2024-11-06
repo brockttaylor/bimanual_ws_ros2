@@ -4,14 +4,33 @@ import math
 import numpy as np
 import rclpy
 import time
+
+import moveit_msgs.msg
+import moveit_msgs.srv
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from geometry_msgs.msg import Transform
+from geometry_msgs.msg import Transform, PoseStamped, Pose
+from std_msgs.msg import Header
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from urdf_parser_py.urdf import URDF
 import random
 import transforms3d
 import transforms3d._gohlketransforms as tf
 from threading import Thread, Lock
+
+
+def convert_to_message(T):
+    t = Pose()
+    position, Rot, _, _ = transforms3d.affines.decompose(T)
+    orientation = transforms3d.quaternions.mat2quat(Rot)
+    t.position.x = position[0]
+    t.position.y = position[1]
+    t.position.z = position[2]
+    t.orientation.x = orientation[1]
+    t.orientation.y = orientation[2]
+    t.orientation.z = orientation[3]
+    t.orientation.w = orientation[0]        
+    return t
 
 '''This is a class which will perform inverse
    kinematics'''
@@ -31,6 +50,7 @@ class IK(Node):
     #Subscribe to current joint state of the robot
         self.joint_state_sub = self.create_subscription(
             JointState, '/joint_states', self.get_joint_state, 10)
+    
 
     #This is a mutex
         self.mutex = Lock()
@@ -42,12 +62,41 @@ class IK(Node):
         self.get_joint_info()
 
 
-        #Subscribers and publishers for numerical IK
-        self.ik_command_sub = self.create_subscription(
-            Transform, '/ik_command', self.get_ik_command, 10)
-        self.joint_command_pub = self.create_publisher(JointState, '/joint_command', 10)
+        self.joint_command_pub = self.create_publisher(JointState, '/joint_states', 10)
         self.joint_command_msg = JointState()
+        
+        self.service_cb_group1 = MutuallyExclusiveCallbackGroup()
 
+
+        # Wait for moveit IK service
+        self.ik_service = self.create_client(moveit_msgs.srv.GetPositionIK, '/compute_ik', callback_group=self.service_cb_group1)
+        while not self.ik_service.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Waiting for IK service...')
+        self.get_logger().info('IK service ready')
+
+        # MoveIt parameter
+        self.group_name = 'panda_arm'
+        self.get_logger().info(f'child map: \n{self.robot.child_map}')
+
+        #publish to joint_states on timer
+        self.joint_command_msg.name = self.joint_names
+        q_c_default = np.zeros(self.num_joints)
+        joint_positions = [float(i) for i in q_c_default]
+        self.joint_command_msg.position = joint_positions
+        self.joint_command_msg.header.stamp = self.get_clock().now().to_msg()
+
+        timer_period = 0.1  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        
+        #ik
+        ik_timer_period = 10 #seconds
+        self.ik_timer = self.create_timer(ik_timer_period, self.get_ik)
+
+
+    def timer_callback(self):
+        self.joint_command_msg.header.stamp = self.get_clock().now().to_msg()
+        self.joint_command_pub.publish(self.joint_command_msg)
+ 
     '''This is a function which will collect information about the robot which
        has been loaded from the parameter server. It will populate the variables
        self.num_joints (the number of joints), self.joint_names and
@@ -63,6 +112,9 @@ class IK(Node):
                 self.joint_names.append(current_joint.name)
                 self.joint_axes.append(current_joint.axis)
             link = next_link
+        #self.num_joints = self.num_joints + 1
+        #self.joint_names.append("panda_finger_joint2")
+        #self.joint_axes.append(0)
 
     '''This is a function which will assemble the jacobian of the robot using the
        current joint transforms and the transform from the base to the end
@@ -98,6 +150,43 @@ class IK(Node):
             J[:, j] = V_j[:, axis]
         return J
 
+    def moveit_ik(self, T_goal):
+        """ This function will perform IK for a given transform T of the 
+        end-effector. It .
+
+        Returns:
+            q: returns a list q[] of values, which are the result 
+            positions for the joints of the robot arm, ordered from proximal 
+            to distal. If no IK solution is found, it returns an empy list
+        """
+
+        req = moveit_msgs.srv.GetPositionIK.Request()
+        req.ik_request.group_name = self.group_name
+        req.ik_request.robot_state = moveit_msgs.msg.RobotState()
+        req.ik_request.robot_state.joint_state.name = self.joint_names
+        req.ik_request.robot_state.joint_state.position = list(np.zeros(self.num_joints))
+        req.ik_request.robot_state.joint_state.velocity = list(np.zeros(self.num_joints))
+        req.ik_request.robot_state.joint_state.effort = list(np.zeros(self.num_joints))
+        req.ik_request.robot_state.joint_state.header.stamp = self.get_clock().now().to_msg()
+        req.ik_request.avoid_collisions = True
+        req.ik_request.pose_stamped = PoseStamped()
+        req.ik_request.pose_stamped.header.frame_id = 'panda_link0'
+        req.ik_request.pose_stamped.header.stamp = self.get_clock().now().to_msg()
+        req.ik_request.pose_stamped.pose = convert_to_message(T_goal)
+        req.ik_request.timeout = rclpy.duration.Duration(seconds=5.0).to_msg()
+        
+        self.get_logger().info('Sending IK request...')
+        res = self.ik_service.call(req)
+        self.get_logger().info('IK request returned')
+        
+        q = []
+        if res.error_code.val == res.error_code.SUCCESS:
+            q = res.solution.joint_state.position
+        for i in range(0,len(q)):
+            while (q[i] < -math.pi): q[i] = q[i] + 2 * math.pi
+            while (q[i] > math.pi): q[i] = q[i] - 2 * math.pi
+        return q
+
     '''This is the callback which will be executed when the inverse kinematics
        recieve a new command. The command will contain information about desired
        end effector pose relative to the root of your robot. At the end of this
@@ -105,56 +194,18 @@ class IK(Node):
        search for a solution indefinitely - there should be a time limit. When
        searching for two matrices which are the same, we expect numerical
        precision of 10e-3.'''
-    def get_ik_command(self, command):
+    def get_ik(self):
         self.mutex.acquire()
         #--------------------------------------------------------------------------
         # Implement your code here
-        np.random.seed(0) #fix seed
-        b_T_ee_des = self.transform_to_hom(command) #desired end effector transformation
-        angle, axis = self.rotation_from_matrix(b_T_ee_des[:3, :3])
-        rot_des = angle * axis
-        trans_des = b_T_ee_des[:3, 3]
-        x_des = np.concatenate((trans_des, rot_des))#desired pose wrt robot base
-        
+        self.end_effector_desired = transforms3d.affines.compose(np.zeros(3), np.eye(3), np.ones(3))
+        #print(self.end_effector_desired)
+        b_T_ee_des = self.end_effector_desired #desired end effector transformation
+        q_c = self.moveit_ik(b_T_ee_des)
 
-        max_iterations = 3 #try 3 times max
-        max_time = 10 #10 seconds per iteration
-        current_iteration = 1
-        error_mag = 9999 #current error
-        max_error = 0.01
-        LR = 1
-        q_c = np.zeros(self.num_joints)
-        
-        while(error_mag >= max_error and current_iteration <= max_iterations):
-            q_c = 2*np.pi*np.random.rand(self.num_joints) #initial guess
-            ts = time.time() #get start time
-            tc = ts #get current time
-            print("STARTING IK")
-            while(tc - ts < max_time):
-                joint_transforms, b_T_ee_cur = self.forward_kinematics(q_c)
-                ee_T_b_cur = self.get_inverse_matrix(b_T_ee_cur)
-                ee_cur_T_ee_des = np.dot(ee_T_b_cur, b_T_ee_des) #get transformation from current to desired
-                angle, axis = self.rotation_from_matrix(ee_cur_T_ee_des[:3,:3])
-                rot_des = angle * axis #get canonical axis rotations
-                deltax = np.concatenate((ee_cur_T_ee_des[:3, 3], rot_des))
- 
-                J = self.get_jacobian(b_T_ee_cur, joint_transforms)
-                Jp = np.linalg.pinv(J) 
-                deltaq = np.dot(Jp, deltax)
-            
-                error_mag = np.linalg.norm(deltax)
-                if(error_mag < max_error):
-                    break
-                #print(error_mag)
-                q_c = q_c + LR*deltaq
-                tc = time.time()
-            current_iteration += 1
-        
         #publish solution
         joint_positions = [float(i) for i in q_c]
-        self.joint_command_msg.name = self.joint_names
         self.joint_command_msg.position = joint_positions
-        self.joint_command_pub.publish(self.joint_command_msg)
         
         #-----------------------------------------------,---------------------------
         self.mutex.release()

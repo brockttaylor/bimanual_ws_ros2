@@ -1,3 +1,0 @@
-[console_scripts]
-ik = minibe.ik:main
-

@@ -5,11 +5,14 @@ from launch.substitutions import Command, LaunchConfiguration, FindExecutable, P
 from launch.conditions import IfCondition
 from ament_index_python.packages import get_package_share_directory
 from launch_ros.substitutions import FindPackageShare
+from moveit_configs_utils import MoveItConfigsBuilder
+from moveit_configs_utils.launches import generate_move_group_launch
+
 import os
 
 
 def generate_launch_description():
-
+    moveit_config = MoveItConfigsBuilder("panda", package_name="panda_moveit_config").to_moveit_configs()
     declared_arguments = [] 
     launch_ik = LaunchConfiguration('ik')
     launch_ik_arg = DeclareLaunchArgument(
@@ -90,8 +93,8 @@ def generate_launch_description():
     rviz_config_file = PathJoinSubstitution(
         [FindPackageShare(description_package), "rviz", "view_robot.rviz"]
     )
-
-    return launch.LaunchDescription(declared_arguments + 
+    launch_description = generate_move_group_launch(moveit_config)
+    launch_description.add_entity(launch.LaunchDescription(declared_arguments + 
         [
         launch_ros.actions.Node(
             package='robot_state_publisher',
@@ -100,10 +103,10 @@ def generate_launch_description():
             output='screen',
             parameters=[{'robot_description': robot_description}],
             condition=IfCondition(LaunchConfiguration('state_publisher'))),
-        launch_ros.actions.Node(
-            package='joint_state_publisher',
-            executable='joint_state_publisher',
-            name='joint_state_publisher'),
+        #launch_ros.actions.Node(
+        #    package='joint_state_publisher',
+        #    executable='joint_state_publisher',
+        #    name='joint_state_publisher'),
         launch_ros.actions.Node(
             package='rviz2',
             executable='rviz2',
@@ -117,6 +120,6 @@ def generate_launch_description():
             name='ik',
             parameters=[{"rd_file": LaunchConfiguration("rd_file")}],
             condition=IfCondition(LaunchConfiguration('ik')),
-            output='screen'),
-        ]
-  )
+            output='screen'),]))
+    return launch_description
+

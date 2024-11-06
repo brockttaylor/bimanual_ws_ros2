@@ -1,9 +1,0 @@
-# Default initial positions for minibe's ros2_control fake system
-
-initial_positions:
-  joint_A1: 0
-  joint_A2: 0
-  joint_A3: 0
-  joint_B1: 0
-  joint_B2: 0
-  joint_B3: 0

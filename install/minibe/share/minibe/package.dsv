@@ -1,6 +1,0 @@
-source;share/minibe/hook/pythonpath.ps1
-source;share/minibe/hook/pythonpath.dsv
-source;share/minibe/hook/pythonpath.sh
-source;share/minibe/hook/ament_prefix_path.ps1
-source;share/minibe/hook/ament_prefix_path.dsv
-source;share/minibe/hook/ament_prefix_path.sh
