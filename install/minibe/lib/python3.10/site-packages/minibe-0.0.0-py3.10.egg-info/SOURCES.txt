@@ -8,7 +8,9 @@ setup.py
 ../../build/minibe/minibe.egg-info/requires.txt
 ../../build/minibe/minibe.egg-info/top_level.txt
 ../../build/minibe/minibe.egg-info/zip-safe
+launch/minibe_launch.py
 minibe/__init__.py
+minibe/ik.py
 resource/minibe
 test/test_copyright.py
 test/test_flake8.py

@@ -1,7 +1,10 @@
+/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe/ik.py
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe/__init__.py
+/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe/__pycache__/ik.cpython-310.pyc
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe/__pycache__/__init__.cpython-310.pyc
 /home/ubuntu/bimanual_ws_ros2/install/minibe/share/ament_index/resource_index/packages/minibe
 /home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/package.xml
+/home/ubuntu/bimanual_ws_ros2/install/minibe/share/minibe/launch/minibe_launch.py
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/PKG-INFO
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/SOURCES.txt
@@ -9,3 +12,4 @@
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/zip-safe
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/entry_points.txt
 /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info/top_level.txt
+/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/minibe/ik

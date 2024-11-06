@@ -1,0 +1,21 @@
+[1.181s] Invoking command in '/home/ubuntu/bimanual_ws_ros2/src/minibe': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/minibe build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe/install.log --single-version-externally-managed install_data
+[1.476s] running egg_info
+[1.477s] writing ../../build/minibe/minibe.egg-info/PKG-INFO
+[1.477s] writing dependency_links to ../../build/minibe/minibe.egg-info/dependency_links.txt
+[1.477s] writing entry points to ../../build/minibe/minibe.egg-info/entry_points.txt
+[1.477s] writing requirements to ../../build/minibe/minibe.egg-info/requires.txt
+[1.477s] writing top-level names to ../../build/minibe/minibe.egg-info/top_level.txt
+[1.480s] reading manifest file '../../build/minibe/minibe.egg-info/SOURCES.txt'
+[1.482s] writing manifest file '../../build/minibe/minibe.egg-info/SOURCES.txt'
+[1.482s] running build
+[1.482s] running build_py
+[1.483s] running install
+[1.483s] running install_lib
+[1.485s] running install_data
+[1.487s] running install_egg_info
+[1.489s] removing '/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info' (and everything under it)
+[1.489s] Copying ../../build/minibe/minibe.egg-info to /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages/minibe-0.0.0-py3.10.egg-info
+[1.491s] running install_scripts
+[1.516s] Installing ik script to /home/ubuntu/bimanual_ws_ros2/install/minibe/lib/minibe
+[1.520s] writing list of installed files to '/home/ubuntu/bimanual_ws_ros2/build/minibe/install.log'
+[1.546s] Invoked command in '/home/ubuntu/bimanual_ws_ros2/src/minibe' returned '0': PYTHONPATH=/home/ubuntu/bimanual_ws_ros2/build/minibe/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/bimanual_ws_ros2/install/minibe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/minibe build --build-base /home/ubuntu/bimanual_ws_ros2/build/minibe/build install --record /home/ubuntu/bimanual_ws_ros2/build/minibe/install.log --single-version-externally-managed install_data
