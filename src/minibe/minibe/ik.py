@@ -12,6 +12,7 @@ from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Transform, PoseStamped, Pose
 from std_msgs.msg import Header
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
+from rclpy.executors import MultiThreadedExecutor
 from urdf_parser_py.urdf import URDF
 import random
 import transforms3d
@@ -89,7 +90,7 @@ class IK(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         
         #ik
-        ik_timer_period = 10 #seconds
+        ik_timer_period = 0.1 #seconds
         self.ik_timer = self.create_timer(ik_timer_period, self.get_ik)
 
 
@@ -112,8 +113,8 @@ class IK(Node):
                 self.joint_names.append(current_joint.name)
                 self.joint_axes.append(current_joint.axis)
             link = next_link
-        #self.num_joints = self.num_joints + 1
-        #self.joint_names.append("panda_finger_joint2")
+        self.num_joints = self.num_joints + 1
+        self.joint_names.append("panda_finger_joint2")
         #self.joint_axes.append(0)
 
     '''This is a function which will assemble the jacobian of the robot using the
@@ -176,6 +177,7 @@ class IK(Node):
         req.ik_request.timeout = rclpy.duration.Duration(seconds=5.0).to_msg()
         
         self.get_logger().info('Sending IK request...')
+        #self.get_logger().info(self.joint_names)
         res = self.ik_service.call(req)
         self.get_logger().info('IK request returned')
         
@@ -198,7 +200,7 @@ class IK(Node):
         self.mutex.acquire()
         #--------------------------------------------------------------------------
         # Implement your code here
-        self.end_effector_desired = transforms3d.affines.compose(np.zeros(3), np.eye(3), np.ones(3))
+        self.end_effector_desired = transforms3d.affines.compose((0.5,0.5,0), np.eye(3,3), (1,1,1))
         #print(self.end_effector_desired)
         b_T_ee_des = self.end_effector_desired #desired end effector transformation
         q_c = self.moveit_ik(b_T_ee_des)
@@ -300,7 +302,10 @@ class IK(Node):
 def main(args = None):
     rclpy.init()
     ik = IK()
-    rclpy.spin(ik)
+    executor = MultiThreadedExecutor()
+    executor.add_node(ik)
+    executor.spin()
+    #rclpy.spin(ik)
     ik.destroy_node()
     rclpy.shutdown()
 
